@@ -1,0 +1,6 @@
+DisablePathCorrection: false
+EnablePathEscape: true
+FireMethodNotAllowed: true
+DisableBodyConsumptionOnUnmarshal: true
+TimeFormat: Mon, 01 Jan 2020 15:04:05 GMT
+Charset: UTF-8
