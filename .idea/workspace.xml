@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08f68d10-69c9-4e52-b5a1-caa6707e573d" name="Default Changelist" comment="" />
+    <list default="true" id="08f68d10-69c9-4e52-b5a1-caa6707e573d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/database.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/runner-build" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/runner-build" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,11 +22,15 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
     <option name="useGoPathFromSystemEnvironment" value="false" />
   </component>
   <component name="ProjectId" id="1ZnP6kHmeoUT8brUGsnax49zmrm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -101,10 +112,10 @@
       <screen x="0" y="26" width="1920" height="1011" />
     </state>
     <state x="806" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.26.1920.1011@0.26.1920.1011" timestamp="1585622033776" />
-    <state x="1228" y="420" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585571967714">
+    <state x="1228" y="420" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586176647886">
       <screen x="0" y="26" width="1920" height="1011" />
     </state>
-    <state x="1228" y="420" key="#com.intellij.fileTypes.FileTypeChooser/0.26.1920.1011@0.26.1920.1011" timestamp="1585571967714" />
+    <state x="1228" y="420" key="#com.intellij.fileTypes.FileTypeChooser/0.26.1920.1011@0.26.1920.1011" timestamp="1586176647886" />
     <state x="531" y="289" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586151944790">
       <screen x="0" y="26" width="1920" height="1011" />
     </state>

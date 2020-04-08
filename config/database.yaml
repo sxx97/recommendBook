@@ -1,0 +1,6 @@
+mysql:
+  default:
+    DBHost: "****"
+    DBName: "*****"
+    userName: "*****"
+    password: "*******"
