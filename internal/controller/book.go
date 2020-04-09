@@ -8,14 +8,14 @@ import (
 	"readBook/tools"
 )
 
+// 处理图书搜索
 func FindBooksHandler(ctx iris.Context) {
 	var (
 		bookInfo modles.Book
 		statusStr = "success"
 		msg string
 	)
-	keyword := ctx.Params().Get("keyword")
-	fmt.Println("keyword获取到的内容", keyword)
+	keyword := ctx.URLParam("keyword")
 	db := database.GetDB()
 	books, errs := bookInfo.FindBlurryBooks(db, keyword)
 	if len(errs) > 0 {
@@ -24,5 +24,12 @@ func FindBooksHandler(ctx iris.Context) {
 		statusStr = "fail"
 		msg = errs[0].Error()
 	}
-	ctx.JSON(tools.ApiResource(statusStr, books, msg))
+	var responseData map[string]interface{}
+	if books != nil {
+		responseData = map[string]interface{}{
+			"data": books,
+			"total": len(books),
+		}
+	}
+	ctx.JSON(tools.ApiResource(statusStr, responseData, msg))
 }

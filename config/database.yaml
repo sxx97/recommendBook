@@ -1,6 +1,6 @@
 mysql:
   default:
-    DBHost: "****"
-    DBName: "*****"
-    userName: "*****"
-    password: "*******"
+    DBHost: 116.62.213.108:3306
+    DBName: jian_shu
+    userName: root
+    password: 13184234719@Mysql

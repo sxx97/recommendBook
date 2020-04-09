@@ -4,6 +4,7 @@ import (
 	"github.com/dgrijalva/jwt-go"
 	jwtmiddleware "github.com/iris-contrib/middleware/jwt"
 	"github.com/kataras/iris/v12"
+	"strings"
 	"time"
 )
 
@@ -46,8 +47,9 @@ func jwtValidateError(ctx iris.Context, err error) {
 	if err == nil {
 		return
 	}
+	requestPath := ctx.Path()
 	for _, path := range OmissionPath {
-		if ctx.Path() == path {
+		if strings.Contains(requestPath, path){
 			ctx.Next()
 			return
 		}

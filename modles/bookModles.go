@@ -6,12 +6,13 @@ import (
 )
 
 type Book struct {
-	Author string `json:author`
-	Name string `json:name`
-	BookCover string `json:book_cover`
-	Details string `json:details`
-	Ct time.Time `json:ct`
-	Ut time.Time `json:ut`
+	Id int `json:"id"`
+	Author string `json:"author"`
+	Name string `json:"name"`
+	BookCover string `json:"book_cover"`
+	Details string `json:"details"`
+	Ct time.Time `json:"ct"`
+	Ut time.Time `json:"ut"`
 }
 
 func (book *Book) AddBook(db *gorm.DB) {
@@ -28,7 +29,7 @@ func (book *Book) AddBook(db *gorm.DB) {
 
 func (book *Book) FindBlurryBooks(db *gorm.DB, keyword string) (result []Book, err []error){
 	keywordStr := "%%" + keyword + "%%"
-	err = db.Where("author like ?", keywordStr).Where("name like ?", keywordStr).Find(&result).GetErrors()
+	err = db.Where("name LIKE ?", keywordStr).Or("author like ?", keywordStr).Find(&result).GetErrors()
 	return
 }
 

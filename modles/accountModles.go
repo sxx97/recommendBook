@@ -6,8 +6,6 @@ import (
 	"time"
 )
 
-
-
 type Account struct {
 	Id int `json:"id"`
 	Account string	`json:"account"`
@@ -18,14 +16,16 @@ type Account struct {
 	DeleteTime *time.Time `json:"delete_time"`
 }
 
-func (account *Account) AddAccount(db *gorm.DB) {
+func (account *Account) AddAccount(db *gorm.DB) *Account {
 	nowTime := time.Now().UTC()
-	db.Create(&Account{
+	createAccount := &Account{
 		Account: account.Account,
 		Password: account.Password,
 		CreateTime: nowTime,
 		UpdateTime: nowTime,
-	})
+	}
+	db.Create(createAccount)
+	return createAccount
 }
 
 func (account Account) HasAccount(db *gorm.DB) bool {

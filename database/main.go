@@ -48,7 +48,6 @@ func getConfigYaml() DBConfig {
 	if err != nil {
 		fmt.Println("读取数据库配置解码时错误", err)
 	}
-	fmt.Println(conf, "DBConfig的配置")
 	return conf.Mysql["default"]
 }
 

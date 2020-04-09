@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08f68d10-69c9-4e52-b5a1-caa6707e573d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/database.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modles/bookListModles.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/controller/book.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/controller/book.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/controller/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/controller/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modles/accountModles.go" beforeDir="false" afterPath="$PROJECT_DIR$/modles/accountModles.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modles/bookModles.go" beforeDir="false" afterPath="$PROJECT_DIR$/modles/bookModles.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modles/userModles.go" beforeDir="false" afterPath="$PROJECT_DIR$/modles/userModles.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/runner-build" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/runner-build" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/jwtToken.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/jwtToken.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -40,11 +40,19 @@ func RegisterHandler(ctx iris.Context) {
 
 	db := database.GetDB()
 	hasAccount := accountInfo.HasAccount(db)
+	var accountId int
 	if hasAccount {
 		msg = "账号已存在"
 		statusStr = "fail"
 	} else {
-		accountInfo.AddAccount(db)
+		accountId = accountInfo.AddAccount(db).Id
+		fmt.Println("accountId的值", accountId)
+	}
+	if accountId != 0 {
+		 userInfo  := &modles.UserInfo{
+			AccountId: accountId,
+		}
+		userInfo.CreateUser(db)
 	}
 	ctx.JSON(tools.ApiResource(statusStr, nil, msg))
 }
